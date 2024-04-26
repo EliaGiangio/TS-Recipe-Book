@@ -1,10 +1,9 @@
-interface Food {
+export interface Food {
     id: string;
     name: string;
     type: string;
     selected: boolean;
 };
-
 const foods: Food[] = [
     { id: crypto.randomUUID(), name: 'pasta', type: 'other', selected: false },
     { id: crypto.randomUUID(), name: 'egg', type: 'other', selected: false },

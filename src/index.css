@@ -1,68 +1,123 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
-  margin: 0;
+  background-color: #e9ecef;
+}
+
+.container {
+  align-items: center;
+  overflow-y: auto;
+  margin-top: 3%;
+
+}
+
+.container h1 {
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sub-container {
+  height: auto;
+  margin-bottom: 10px;
+
+}
+
+.column h2 {
+  margin-top: 2%;
+  font-family: "Russo One", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  padding-left: 1%;
+}
+
+.button-container {
+  padding: 10px;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: #f7f6f8;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+.button-container button {
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.recipe-list-div {
+  height: 15%;
+  display: flex;
+  overflow-x: auto;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.card {
+  margin: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  background-color: #f7f6f8;
+
+}
+
+.card h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+
+}
+
+.card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.card li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.pepe {
+  width: 18rem;
+}
+
+.search-btn {
+  width: 40%;
+  top: 50%;
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.peperone {
+  position: absolute;
+  width: 50%;
+  margin-top: 25%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: #f7f6f8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+
+.recipe-description-steps {
+  text-align: left;
 }
