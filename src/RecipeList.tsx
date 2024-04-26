@@ -4,7 +4,7 @@ import recipes from './recipes.ts';
 
 const RecipeList = () => {
     const userSelection = localStorage.getItem("selection");
-    const [selectedFoods, setSelectedFoods] = useState(userSelection ? JSON.parse(userSelection) : []);
+    const [selectedFoods] = useState(userSelection ? JSON.parse(userSelection) : []);
 
     const MIN_MATCHES = 2; // Set the minimum number of matches required
 

@@ -13,10 +13,10 @@ const Recipe = ({ name, ingredients, explanation }: RecipeProps) => {
         <>
             <div>
                 <div className="card pepe"
-                    onMouseEnter={e => {
+                    onMouseEnter={() => {
                         setStyle({ display: 'block' });
                     }}
-                    onMouseLeave={e => {
+                    onMouseLeave={() => {
                         setStyle({ display: 'none' })
                     }}>
                     <div className="card-body">
